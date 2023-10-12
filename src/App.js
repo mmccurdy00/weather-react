@@ -1,25 +1,41 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
 
-function App() {
+export default function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <form id="search-form">
+        <label for="Search">What's the weather in...</label>
+        <input
+          id="city-input"
+          type="search"
+          placeholder="Search"
+          autocomplete="off"
+        />
+        <input id="search" type="submit" />
+      </form>
+      <h2>The Weather In</h2>
+      <h1>~Tokyo~</h1>
+      <div>
+        <div class="row align-items-start">
+          <div class="col">
+            <h4>Last Updated: Tuesday 12:34 PM</h4>
+            <h4>Description: Clear Skies</h4>
+          </div>
+          <div class="col">
+            <h3>°C | °F</h3>
+          </div>
+          <div class="col">
+            <h4>
+              Humidity: 28%
+              <br />
+              Wind: 13 km/hr
+            </h4>
+          </div>
+        </div>
+      </div>
+      <div>
+        Open-source code by <strong>Merrick McCurdy</strong>
+      </div>
     </div>
   );
 }
-
-export default App;
