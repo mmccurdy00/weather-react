@@ -34,7 +34,10 @@ export default function App() {
         </div>
       </div>
       <div>
-        Open-source code by <strong>Merrick McCurdy</strong>
+        <a href="https://github.com/mmccurdy00/weather-react">
+          Open-source code
+        </a>{" "}
+        by <strong>Merrick McCurdy</strong>
       </div>
     </div>
   );
